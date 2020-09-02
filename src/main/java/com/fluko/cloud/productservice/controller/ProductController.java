@@ -52,7 +52,7 @@ public class ProductController {
 		return productEntity;
 	}
 	
-	//DELTE
+	//DELETE
 	@DeleteMapping(path = "/product", consumes = "application/json", produces = "application/json")
 	public ProductEntity delte(@RequestBody ProductEntity productEntity){
 		productRepository.delete(productEntity);
