@@ -34,8 +34,8 @@ public class ProductController {
 	//READ ALL
 	@GetMapping("/products")
 	public List<ProductEntity> findAll(){
-		List<ProductEntity> customers = productRepository.findAll();
-		return customers;
+		List<ProductEntity> products = productRepository.findAll();
+		return products;
 	}
 	
 	//READ ONE
